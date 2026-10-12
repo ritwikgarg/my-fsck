@@ -1,0 +1,41 @@
+================================================================================
+FAILED TEST CASES
+================================================================================
+
+Test Categories:
+  - Error checking (required): Tests for bad and good images
+  - Extra credit - Error detection: Badparent, Baddir
+  - Extra credit - Repair: Repair, Badroot2
+
+================================================================================
+
+Test 1: Error check: Badroot [Required]
+--------------------------------------------------------------------------------
+Expected: MP4_ERR: bad reference count for file.
+Actual: ['MP4_ERR: directory not properly formatted.']
+
+Stderr:
+MP4_ERR: directory not properly formatted.
+
+
+Test 2: Error check: Imrkfree [Required]
+--------------------------------------------------------------------------------
+Expected: MP4_ERR: inode referred to in directory but marked free.
+Actual: ['MP4_ERR: bitmap marks block in use but it is not in use.']
+
+Stderr:
+MP4_ERR: bitmap marks block in use but it is not in use.
+
+
+Test 3: Error check: Badparent [Extra Credit - Error Detection]
+--------------------------------------------------------------------------------
+Expected: MP4_ERR: parent directory mismatch.
+Actual: ['MP4_ERR: inode referred to in directory but marked free.']
+
+Stderr:
+MP4_ERR: inode referred to in directory but marked free.
+
+
+================================================================================
+Total Failed Tests: 3
+================================================================================

@@ -1,0 +1,7 @@
+Compilation (no warnings): 10/10
+README: 5/5
+Code quality/comments: 10/10
+Error checking: 69/75
+Extra credit - Error detection: 3/6
+Extra credit - Repair: 4/4
+Total: 94 (+7)
